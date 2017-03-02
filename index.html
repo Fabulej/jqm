@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="application.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link href="css/main.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="pageone">
+    <div data-role="panel" id="overlayPanel" data-display="overlay">
+      <h2>Menu</h2>
+        <div>
+        <ul data-role="listview">
+          <li><a data-role="button">Opcja</a></li>
+          <li><a data-role="button">Opcja</a></li>
+          <li><a data-role="button">Opcja</a></li>
+          <li><a data-role="button">Opcja</a></li>
+          <li><a data-role="button">Opcja</a></li>
+          <li><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a></li>
+        </ul>
+      </div>
+
+    </div>
+  <div  data-role="main" class="ui-content">
+    <div data-role="header" data-position="fixed">
+      <div data-role="header" data-position="inline">
+        <div align="right"><a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Overlay Panel</a></div>
+      </div>
+      <div data-role="navbar">
+        <ul>
+          <li><a data-role="button"><img class="guziki" src="back.png"></a></li>
+          <li><a data-role="button"><img class="guziki" src="play.png"></a></li>
+          <li><a data-role="button"><img class="guziki" src="next.png"></a></li>
+        </ul>
+      </div>
+      <div data-role='none'>
+        <div data-role='fieldcontain'>
+<input type="range" name="slider" id="slider-0" min="0" max="100" data-highlight="true" data-mini="true" />
+        </div>
+      </div>
+
+    </div>
+
+    <div data-role="content">
+
+      <ul data-role="listview" data-filter="true">
+        <ul class='album' data-role="collapsible-set"><h1>Dark Side of the Moon</h1><img src="dark.png">
+          <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - Speak to Me/Breathe </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - On the Run </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Time </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - The Great Gig in the Sky </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Money </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Us and Them </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Any Colour You Like </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Brain Damage </h3><p>Dark Side of the Moon</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Eclipse </h3><p>Dark Side of the Moon</p></li>
+        </ul>
+        <ul class='album' data-role="collapsible-set"><h1>Animals</h1><img src="animals.jpg"></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Dogs </h3><p>Animals</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs (Three Different Ones) </h3><p>Animals</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Sheep </h3><p>Animals</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
+          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Cats </h3><p>Kotki!!!</p> <img src="kotki.jpg"></img></li>
+        </ul>
+      </ul>
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
