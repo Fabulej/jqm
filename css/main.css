@@ -16,3 +16,6 @@ input.ui-slider-input {
 .top {
   max-height: 1px;
 }
+.mid {
+  min-height: 50%;
+}
