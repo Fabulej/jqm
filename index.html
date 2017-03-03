@@ -5,6 +5,9 @@
 <script src="application.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="themes/theme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -26,7 +29,7 @@
   <div data-role="main" class="ui-content">
     <div data-role="header" data-position="fixed">
       <div  data-role="header" data-position="inline">
-        <div align="right"><a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Overlay Panel</a></div>
+        <div align="right"><a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">menu</a></div>
       </div>
       <div data-role="navbar">
         <ul>
@@ -36,8 +39,8 @@
         </ul>
       </div>
       <div data-role='none'>
-        <div data-role='fieldcontain'>
-<input type="range" name="slider" id="slider-0" min="0" max="100" data-highlight="true" data-mini="true" />
+        <div class='slider' data-role='fieldcontain'>
+<input type="range" name="slider" value='10' id="slider-0" min="0" max="100" data-highlight="true" data-mini="true" />
         </div>
       </div>
 
@@ -45,27 +48,94 @@
 
     <div class='mid' data-role="content">
 
-      <ul data-role="listview" data-filter="true">
-        <ul class='album' data-role="collapsible-set"><h1>Dark Side of the Moon</h1><img src="dark.png">
-          <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - Speak to Me/Breathe </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - On the Run </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Time </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - The Great Gig in the Sky </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Money </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Us and Them </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Any Colour You Like </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Brain Damage </h3><p>Dark Side of the Moon</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Eclipse </h3><p>Dark Side of the Moon</p></li>
-        </ul>
-        <ul class='album' data-role="collapsible-set"><h1>Animals</h1><img src="animals.jpg"></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Dogs </h3><p>Animals</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs (Three Different Ones) </h3><p>Animals</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Sheep </h3><p>Animals</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
-          <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Cats </h3><p>Kotki!!!</p> <img src="kotki.jpg"></img></li>
-        </ul>
-      </ul>
+      <ul data-role="listview" data-split-icon="bars" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li data-role='list-divider'>King Crimson</li>
+        <li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+          <img src="king.jpg">
+          <h2>21st Century Schizoid Man</h2>
+          <p>In the Court of the Crimson King</p></a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+        </li>
+        <li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+          <img src="king.jpg">
+          <h2>I Talk to the Wind</h2>
+          <p>In the Court of the Crimson King</p></a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+        </li>
+        <li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+          <img src="king.jpg">
+          <h2>Epitaph</h2>
+          <p>In the Court of the Crimson King</p></a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+        </li>
+        <li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+          <img src="king.jpg">
+          <h2>Moonchild</h2>
+          <p>In the Court of the Crimson King</p></a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+        </li>
+        <li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+          <img src="king.jpg">
+          <h2>The Court of the Crimson King</h2>
+          <p>In the Court of the Crimson King</p></a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+        </li>
+          <li data-role="list-divider">Pink Floyd</li>
+    			<li class="ui-li-has-alt ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+      			<h2>Speak to Me/Breathe</h2>
+      			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+    			<li class="ui-li-has-alt ui-li-has-thumb"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>On the Run </h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+    			<li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Time</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>The Great Gig in the Sky</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Money</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Us and Them</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Any Colour You Like</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Brain Damage</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+          <li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+    				<img src="dark.png">
+    			<h2>Eclipse</h2>
+    			<p>Dark Side of the Moon</p></a>
+    				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-bars" title="Purchase album"></a>
+    			</li>
+		  </ul>
 
 
     </div>
@@ -75,3 +145,37 @@
 
 </body>
 </html>
+<!--
+<ul data-role="listview">
+  <ul class='album' data-role="collapsible-set"><h1>Dark Side of the Moon</h1><img src="dark.png">
+    <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - Speak to Me/Breathe </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible" data-iconpos="right"><h3>Pink Floyd - On the Run </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Time </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - The Great Gig in the Sky </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Money </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Us and Them </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Any Colour You Like </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Brain Damage </h3><p>Dark Side of the Moon</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Eclipse </h3><p>Dark Side of the Moon</p></li>
+  </ul>
+  <ul class='album' data-role="collapsible-set"><h1>Animals</h1><img src="animals.jpg"></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Dogs </h3><p>Animals</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs (Three Different Ones) </h3><p>Animals</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Sheep </h3><p>Animals</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Pigs on the Wing, Part 1 </h3><p>Animals</p></li>
+    <li data-role="collapsible"data-iconpos="right"><h3>Pink Floyd - Cats </h3><p>Kotki!!!</p> <img src="kotki.jpg"></img></li>
+  </ul>
+  „21st Century Schizoid Man” (Fripp/Giles/Lake/McDonald/Sinfield) – 7:24
+„Mirrors”
+„I Talk to the Wind” (McDonald/Sinfield) – 6:05
+„Epitaph” (Fripp/Giles/Lake/McDonald/Sinfield) – 8:47
+„March for No Reason”
+„Tomorrow and Tomorrow”
+„Moonchild” (Fripp/Giles/Lake/McDonald/Sinfield) – 12:12
+„The Dream”
+„The Illusion”
+„The Court of the Crimson King” (McDonald/Sinfield) – 9:22
+„The Return of the Fire Witch”
+„The Dance of the Puppets”
+-->
