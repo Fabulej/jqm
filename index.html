@@ -13,14 +13,17 @@
 </head>
 <body>
   <div data-role="page" id="pageone">
-    <div data-role="panel" id="overlayPanel" data-display="overlay">
+    <div data-position-fixed="true" data-role="panel" id="overlayPanel" data-display="overlay">
       <h2>Menu</h2>
         <div>
         <ul data-role="listview">
-          <li><a data-role="button">Opcja</a></li>
-          <li><a data-role="button">Opcja</a></li>
-          <li><a data-role="button">Opcja</a></li>
-          <li><a data-role="button">Opcja</a></li>
+          <li><a data-role="button">Profil</a></li>
+          <li><a data-role="button">Wiadomości</a></li>
+          <li data-role="list-divider"></li>
+          <li><a data-role="button">Twoje playlisty</a></li>
+          <li><a data-role="button">Ulubione</a></li>
+          <li data-role="list-divider"></li>
+          <li><a data-role="button">Wyloguj</a></li>
           <li><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a></li>
         </ul>
       </div>
