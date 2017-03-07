@@ -933,9 +933,3 @@ button[disabled],
 	outline-width: 1px;
 	outline-style: auto;
 }
-@media screen and (max-width: 639px) {
-  .guziki {
-    max-height: 10%;
-    max-width: 10%;
-  }
-}
